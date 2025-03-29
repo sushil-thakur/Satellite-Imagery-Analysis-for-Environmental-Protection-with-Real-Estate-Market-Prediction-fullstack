@@ -1,5 +1,6 @@
 import express from "express";
 import dbConnect from "./db.connection.js";
+
 import cors from "cors";
 // backend app
 const app = express();
@@ -11,12 +12,9 @@ app.use(cors());
 // database connection
 dbConnect();
 
-// register routes/controller
-app.use(userController);
-app.use(productController);
 
 // network port
-const PORT = 8080;
+const PORT = 8000;
 
 app.listen(PORT, () => {
   console.log(`App is listening on port ${PORT}`);
