@@ -1,8 +1,5 @@
 # Node modules
 node_modules/
 
-# Environment files (for security)
+# Environment files
 .env
-
-# Logs & temporary files
-*.log
